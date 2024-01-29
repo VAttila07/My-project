@@ -1,18 +1,23 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './assets/Fade-background.png';
 import { Button } from './components/ui/button';
+import { ProgressDemo } from './components/ui/demo/progressDemo';
 
 const App = () => {
+  const [showSite, setShowSite] = useState(false);
+
+  const showButton = () => {
+    setShowSite(true);
+  }
+
   return (
-    <><h1 className='text-9xl uppercase underline font-thunder'>
-      Hello world!
-    </h1>
-    <Button>Hello Button</Button>
-    <h1 className='text-9xl font-voyage'>
-      Voyage
-    </h1>
-    </>
+    <div>
+      <Button onClick={showButton}>Begin</Button>
+      <div className=' sticky z-50 place-content-center'>
+        <ProgressDemo></ProgressDemo>
+      </div>
+    </div>
   )
 }
 
