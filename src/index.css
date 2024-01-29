@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Thunder";
+  font-weight: 400;
+  src: url("./assets/Fonts/Thunder-BoldHC.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Voyage";
+  font-weight: 500;
+  src: url("./assets/Fonts/Voyage-Regular.otf") format("opentype");
+}
